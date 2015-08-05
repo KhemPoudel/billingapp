@@ -1,0 +1,31 @@
+.customer-view-top-header-options{
+    background-color: #f5f5f5;
+    padding-bottom: 0;
+}
+table tr th, table tr td, .btn-label-style{
+    font-family: FontAwesome;
+    font-size: medium;
+    -webkit-box-sizing: 100px;
+    color: #555555;
+}
+.received-amount-input
+{
+    width: 33%;
+}
+.received-amount-label
+{
+    float: left;
+}
+.left-bordered{
+    border-left:2px inset #000000;
+
+}
+.bottom-bordered{
+    border-bottom: 2px inset #000000;
+}
+#tbl-transaction tr td:hover{
+    background-color: #dddddd;
+}
+.stmts tr td:hover{
+    background-color: #dddddd;
+}

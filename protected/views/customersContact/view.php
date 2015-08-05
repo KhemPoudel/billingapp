@@ -1,0 +1,30 @@
+<?php
+/* @var $this CustomersContactController */
+/* @var $model CustomersContact */
+
+$this->breadcrumbs=array(
+	'Customers Contacts'=>array('index'),
+	$model->id,
+);
+
+$this->menu=array(
+	array('label'=>'List CustomersContact', 'url'=>array('index')),
+	array('label'=>'Create CustomersContact', 'url'=>array('create')),
+	//array('label'=>'Update CustomersContact', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Delete CustomersContact', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage CustomersContact', 'url'=>array('admin')),
+);
+?>
+
+<h1>View CustomersContact #<?php echo $model->id; ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id',
+		'Email',
+		'Telephone',
+		'Mobile',
+		'customer_id',
+	),
+)); ?>
